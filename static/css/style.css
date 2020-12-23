@@ -1,0 +1,314 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Caveat";
+  font-style: normal;
+}
+
+.header,
+.footer {
+  background: #1e3d59;
+}
+
+.header__name,
+.footer-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 57px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #2f2f2f;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-search {
+  width: 100%;
+  background: #f5f0e1;
+  border-radius: 15px;
+}
+
+.header-search__input {
+  width: 100%;
+  border-radius: 15px;
+
+  background: url(../jpg/Lupa.png) no-repeat center left;
+  background-position-x: 20px;
+  padding-left: 64px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline-style: none;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.lk {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+
+  color: #f5f0e1;
+
+  background: #1e3d59;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.lk:hover {
+  color: #1e3d59;
+  background: #f5f0e1;
+  text-decoration: none;
+}
+
+.main {
+  background: #f5f0e1;
+}
+
+.content-box {
+  padding-top: 89px;
+}
+
+.main-container {
+  background: url(../jpg/background.png) repeat-y center top / contain;
+  box-shadow: inset 0 0 0 1000px rgba(245, 240, 225, 0.9);
+}
+
+.content-box__item {
+  padding-bottom: 113px;
+}
+
+.content-box__img {
+  width: 100%;
+  height: 306px;
+  border-radius: 25px;
+}
+
+.content-box__img:hover {
+  filter: drop-shadow(6px 6px 10px #234f76);
+}
+
+.contact__email,
+.contact__vk,
+.contact__instagram {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #2f2f2f;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-title {
+  height: 149px;
+  padding-top: 40px;
+
+  background: rgba(255, 255, 255, 0.8);
+  border: 3px solid #1e3d59;
+  border-radius: 15px;
+
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  align-items: center;
+  text-align: center;
+
+  color: #000000;
+}
+
+.food-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+  padding-bottom: 40px;
+
+  color: #000000;
+}
+
+.food-subtitle {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+
+  color: #000000;
+
+  height: 155px;
+  padding-top: 20px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.blue-line,
+.blue-line-bottom {
+  background: #1e3d59;
+}
+
+.blue-line-bottom {
+  position: fixed;
+  bottom: 0;
+  margin-top: 198px;
+}
+
+.reglog-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #1e3d59;
+}
+
+.reg-email,
+.reglog-login,
+.reglog-password {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #1e3d59;
+}
+
+.reglog__input {
+  width: 100%;
+  outline: none;
+  background: #ffffff;
+  border: 3px solid #1e3d59;
+  box-sizing: border-box;
+  border-radius: 15px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  padding-left: 20px;
+}
+
+.reglog-btn {
+  background: #1e3d59;
+  border-radius: 15px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  outline: none;
+
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.gotoreg {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 50px;
+}
+
+.line {
+  content: "";
+  height: 6px;
+  background: #1e3d59;
+}
+
+.recept-subtitle,
+.recept-text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 38px;
+
+  color: #000000;
+
+  height: 155px;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.7);
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.food-img {
+  display: contents;
+}
+
+.lk__login,
+.lk__login-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+
+  color: #1e3d59;
+}
+
+.lk__login-text {
+  text-decoration: underline;
+}
+
+.btn-add-recept {
+  background: #1e3d59;
+  border-radius: 15px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  outline: none;
+
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.lk-Subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #1e3d59;
+}

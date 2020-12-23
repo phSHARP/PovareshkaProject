@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../static/jpg/logo.png" type="image/x-icon" />
+    <title>Поварешка</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row py-3">
+          <div class="col-lg-1">
+            <img src="../static/jpg/logo.png" alt="" />
+          </div>
+          <div class="col-lg-3">
+            <p class="header__name">Поварешка</p>
+          </div>
+          <div class="col-lg-4 py-2">
+            <div class="header-search">
+              <input
+                type="text"
+                class="header-search__input"
+                id="courseSearch"
+                placeholder="Поиск по рецептам"
+              />
+              <script>
+                let input = document.getElementById("courseSearch");
+                input.addEventListener("keyup", function(event) {
+                  event.preventDefault();
+                  if (event.key === 'Enter') {
+                    location.href = '{% url 'details' %}?search=' + input.value;
+                  }
+                });
+              </script>
+            </div>
+          </div>
+          <div class="col-lg-2 ml-auto py-3">
+            <a href="#" onclick="location.href='{% url 'log_in' %}'" class="lk py-1 px-4">Войти</a>
+          </div>
+          <div class="col-lg-2 ml-auto py-2 d-none">
+            <a href="#" class="lk-account">
+              <img src="../static/jpg/lk.png" alt />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container main-container">
+        <div class="row justify-content-center py-5">
+          <div class="col-lg-4">
+            <p class="main-title">{{ course.name }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 line"></div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="recept-subtitle">
+              Ингредиенты: <br />
+                {{ course.ingredients }}
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 recept-img">
+            <img src="../media/{{ course.image }}" alt height="455" />
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="recept-text">
+                {{ course.receipt }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1 class="footer-title pt-4">Контакты:</h1>
+        </div>
+        <div class="row justify-content-center py-5">
+          <div class="col-lg-3">
+            <p class="contact__email">dpapkovskiy@mail.ru</p>
+          </div>
+          <div class="col-lg-2">
+            <a href="#" class="contact__vk"> Вконтакте </a>
+          </div>
+          <div class="col-lg-2">
+            <a href="#" class="contact__instagram"> Инстаграм </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
